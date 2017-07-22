@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Create test file",
+        "command": "jgrip:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "jgrip",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "jgrip:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

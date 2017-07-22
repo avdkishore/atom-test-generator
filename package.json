@@ -2,13 +2,21 @@
   "name": "jgrip",
   "version": "0.0.1",
   "description": "A helper tool for react unit testing.",
-  "main": "src/index.js",
+  "main": "lib/jgrip.js",
   "scripts": {
     "start": "babel-node src/index.js --presets es2015,stage-2",
     "test": "eslint src"
   },
-  "author": "Ujjwal Mishra",
-  "license": "ISC",
+  "author": "Ujjwal Mishra <ujjwalmishra09@gmail.com/>",
+  "license": "MIT",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "jgrip:toggle"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
