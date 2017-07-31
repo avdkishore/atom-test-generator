@@ -5,5 +5,37 @@
   "globals": {
      "atom": true
   },
-  "extends": "airbnb-base"
+  "extends": "airbnb-base",
+  "plugins": [
+    "react"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "comma-dangle": 0,
+    "indent": [2, 2, { "SwitchCase": 0 }],
+    "no-param-reassign": [2, { "props": false }],
+    "no-var": 2,
+    "arrow-body-style": 0,
+    "react/display-name": 0,
+    "react/jsx-boolean-value": 2,
+    "react/jsx-no-undef": 2,
+    "react/jsx-sort-props": 0,
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/no-did-mount-set-state": 2,
+    "react/no-did-update-set-state": 2,
+    "react/no-multi-comp": 0,
+    "react/no-unknown-property": 2,
+    "react/jsx-indent-props": 0,
+    "react/prop-types": 2,
+    "react/self-closing-comp": 2,
+    "strict": [2, "global"],
+    "react/react-in-jsx-scope": 2,
+    "block-scoped-var": 0,
+    "padded-blocks": 0
+  }
 }
