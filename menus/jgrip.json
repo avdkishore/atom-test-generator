@@ -3,7 +3,7 @@
     "atom-text-editor": [
       {
         "label": "Create test file",
-        "command": "jgrip:toggle"
+        "command": "jgrip:generate"
       }
     ]
   },
@@ -15,8 +15,8 @@
           "label": "jgrip",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "jgrip:toggle"
+              "label": "Generate",
+              "command": "jgrip:generate"
             }
           ]
         }
