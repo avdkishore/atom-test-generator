@@ -1,7 +1,15 @@
 #! /usr/bin/env node
-// elsint-disable
+
+/* eslint-disable no-console */
 const path = require('path');
-const testFile = require('./testFile').default; // eslint-disable-line
+
+const testFile = null;
+
+try {
+  testFile = require('./utils/testFile').default; // eslint-disable-line
+} catch (e) {
+  console.log('please run `npm run build`');
+}
 
 if (!process.argv[1]) {
   console.log('Source file is not defined.'); // eslint-disable-line

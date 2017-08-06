@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "description": "A helper tool for react unit testing.",
   "main": "lib/jgrip.js",
-  "bin": "src/jGripCli.js",
+  "bin": "cli/index.js",
   "scripts": {
     "test": "eslint lib",
-    "build": "rm -rf src && mkdir src && babel --presets=es2015,stage-2 lib/utils --out-dir src && cp lib/jGripCli.js src/jGripCli.js"
+    "build": "rm -rf cli/utils && mkdir cli/utils && babel --presets=es2015,stage-2 lib/utils --out-dir cli/utils"
   },
   "author": "Ujjwal Mishra <ujjwalmishra09@gmail.com/>",
   "license": "MIT",
