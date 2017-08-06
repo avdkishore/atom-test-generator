@@ -1,5 +1,6 @@
 {
   "atom-workspace": {
-    "ctrl-alt-o": "jgrip:generate"
+    "ctrl-alt-g": "jgrip:generate",
+    "ctrl-alt-r": "jgrip:right"
   }
 }

@@ -2,7 +2,7 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Create test file",
+        "label": "Generate test file",
         "command": "jgrip:generate"
       }
     ]
@@ -15,8 +15,12 @@
           "label": "jgrip",
           "submenu": [
             {
-              "label": "Generate",
+              "label": "Generate Test File",
               "command": "jgrip:generate"
+            },
+            {
+              "label": "Open jgrip tool kit",
+              "command": "jgrip:right"
             }
           ]
         }

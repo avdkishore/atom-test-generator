@@ -11,11 +11,12 @@
   "author": "Ujjwal Mishra <ujjwalmishra09@gmail.com/>",
   "license": "MIT",
   "keywords": [],
-  "activationCommands": {
-    "atom-workspace": "jgrip:generate"
-  },
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ujjwalmishra09/Jgrip.git"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
