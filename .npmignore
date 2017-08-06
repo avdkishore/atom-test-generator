@@ -1,9 +1,9 @@
-lib/utils
-lib/view
-lib/jgrip.js
+lib
 keymaps
 menus
 spec
 styles
 .eslitrc.json
+CHANGELOG.md
+.gitignore
 test.js
