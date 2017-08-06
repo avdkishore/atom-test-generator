@@ -6,8 +6,7 @@
   "bin": "cli/index.js",
   "scripts": {
     "test": "eslint lib",
-    "build": "rm -rf cli/utils && mkdir cli/utils && babel --presets=es2015,stage-2 lib/utils --out-dir cli/utils",
-    "postpublish": "rm -rf cli/utils"
+    "build": "rm -rf cli/utils && mkdir cli/utils && babel --presets=es2015,stage-2 lib/utils --out-dir cli/utils"
   },
   "author": "Ujjwal Mishra <ujjwalmishra09@gmail.com/>",
   "license": "MIT",
