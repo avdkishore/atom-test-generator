@@ -1,6 +1,6 @@
 {
   "name": "jgrip",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "A helper tool for react unit testing.",
   "main": "lib/jgrip.js",
   "bin": "cli/index.js",
