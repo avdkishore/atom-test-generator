@@ -3,22 +3,24 @@
 /* eslint-disable no-console */
 const path = require('path');
 
-const testFile = null;
+let generate = null;
 
 try {
-  testFile = require('./utils/testFile').default; // eslint-disable-line
+  generate = require('./utils/generate').default; // eslint-disable-line
+
+  if (!process.argv[1]) {
+    console.log('Source file is not defined.');
+  }
+
+  const promise = new Promise((resolve) => {
+    generate(path.join(process.env.PWD, process.argv[2]), resolve);
+  });
+
+  promise.then((err) => {
+    if (err) console.log(err);
+    else console.log('Succesfully created.');
+  });
+
 } catch (e) {
-  console.log('please run `npm run build`');
+  console.log(e);
 }
-
-if (!process.argv[1]) {
-  console.log('Source file is not defined.'); // eslint-disable-line
-}
-
-const promise = new Promise((resolve) => {
-  testFile(path.join(process.env.PWD, process.argv[2]), resolve);
-});
-
-promise.then(() => {
-  console.log('created');
-});
