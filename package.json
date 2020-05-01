@@ -6,7 +6,9 @@
   "bin": "cli/index.js",
   "scripts": {
     "test": "eslint lib",
-    "build": "rm -rf cli/utils && mkdir cli/utils && babel --presets=es2015,stage-2 lib/utils --out-dir cli/utils"
+    "build": "rm -rf cli/utils && mkdir cli/utils && babel --presets=es2015,stage-2 lib/utils --out-dir cli/utils",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Ujjwal Mishra <ujjwalmishra09@gmail.com/>",
   "license": "MIT",
@@ -37,6 +39,8 @@
     "react": "^15.6.1",
     "react-docgen": "^2.17.0",
     "react-dom": "^15.6.1",
-    "react-tap-event-plugin": "^2.0.1"
-  }
+    "react-tap-event-plugin": "^2.0.1",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
